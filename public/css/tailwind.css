@@ -696,8 +696,14 @@
       max-width: 96rem !important;
     }
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
+  }
+  .mr-24 {
+    margin-right: calc(var(--spacing) * 24);
   }
   .box-border {
     box-sizing: border-box;
@@ -803,6 +809,9 @@
   }
   .h-72 {
     height: calc(var(--spacing) * 72);
+  }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
   }
   .h-full {
     height: 100%;
@@ -1242,6 +1251,20 @@
   .justify-items-stretch {
     justify-items: stretch;
   }
+  .space-y-4 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
+  .space-y-6 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+  }
   .space-y-96 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -1361,6 +1384,9 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1523,6 +1549,12 @@
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\/public\/assets\/images\/\)\] {
+    background-image: url(/public/assets/images/);
+  }
+  .bg-\[url\(\/public\/assets\/images\/brisas\.jpeg\)\] {
+    background-image: url(/public/assets/images/brisas.jpeg);
+  }
   .bg-\[url\(\/public\/assets\/images\/cazul\.png\)\] {
     background-image: url(/public/assets/images/cazul.png);
   }
@@ -1532,8 +1564,17 @@
   .bg-\[url\(\/public\/assets\/images\/cescondido\.png\)\] {
     background-image: url(/public/assets/images/cescondido.png);
   }
+  .bg-\[url\(\/public\/assets\/images\/estrella2\.jpeg\)\] {
+    background-image: url(/public/assets/images/estrella2.jpeg);
+  }
   .bg-\[url\(\/public\/assets\/images\/humedalguarino\.png\)\] {
     background-image: url(/public/assets/images/humedalguarino.png);
+  }
+  .bg-\[url\(\/public\/assets\/images\/oso\.jpeg\)\] {
+    background-image: url(/public/assets/images/oso.jpeg);
+  }
+  .bg-\[url\(\/public\/assets\/images\/routeforest1\.jpg\)\] {
+    background-image: url(/public/assets/images/routeforest1.jpg);
   }
   .bg-none {
     background-image: none;
@@ -1692,6 +1733,9 @@
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
@@ -1709,6 +1753,18 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .pt-2 {
+    padding-top: calc(var(--spacing) * 2);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
+  }
+  .pb-6 {
+    padding-bottom: calc(var(--spacing) * 6);
+  }
+  .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
   }
   .text-center {
     text-align: center;
@@ -1758,6 +1814,10 @@
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -1853,6 +1913,9 @@
   }
   .text-secondary {
     color: var(--color-secondary);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .capitalize {
     text-transform: capitalize;
@@ -2383,6 +2446,16 @@
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
+}
+.cardTitle {
+  padding-inline: calc(var(--spacing) * 8);
+  padding-top: calc(var(--spacing) * 8);
+  padding-bottom: calc(var(--spacing) * 2);
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
 }
 @keyframes spin {
   to {
