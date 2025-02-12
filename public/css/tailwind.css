@@ -696,9 +696,6 @@
       max-width: 96rem !important;
     }
   }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
   }
@@ -792,14 +789,8 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-2\/5 {
     height: calc(2/5 * 100%);
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
   }
   .h-3\/4 {
     height: calc(3/4 * 100%);
@@ -827,9 +818,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1549,9 +1537,6 @@
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\/public\/assets\/images\/\)\] {
-    background-image: url(/public/assets/images/);
-  }
   .bg-\[url\(\/public\/assets\/images\/brisas\.jpeg\)\] {
     background-image: url(/public/assets/images/brisas.jpeg);
   }
@@ -1748,6 +1733,9 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -1759,9 +1747,6 @@
   }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
-  }
-  .pb-6 {
-    padding-bottom: calc(var(--spacing) * 6);
   }
   .pl-8 {
     padding-left: calc(var(--spacing) * 8);
@@ -1830,6 +1815,10 @@
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
