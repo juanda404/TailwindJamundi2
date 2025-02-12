@@ -9,27 +9,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-poppins">
     <nav></nav>
     <div id="tab_bar"></div>
-    <section class="w-full h-screen">
+    <section class="w-full h-screen">   
         <div id="home">
             <div class="w-full h-3/4">         
                <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                     <input class="p-3 bg-white rounded-full shadow-sm "  placeholder="Jamundí"  type="search" name="" id="">
-                      <button class=" w-36 rounded-full bg-white text-xl text-secondary shadow-sm font-semibold p-4">Explorer</button>
+                     <input class="w-48 p-3 outline-none bg-white rounded-full shadow-sm  transition duration-300 focus-within:shadow-sm  focus:ring-2 focus:w-11/12 "  placeholder="Jamundí"  type="search" name="" id="">
+                      <button class=" w-36 rounded-full bg-white text-xl text-secondary shadow-sm font-semibold p-4  transition-all duration-500 ease-in-out hover:bg-secondary hover:text-primary transform hover:-translate-y-1 hover:scale-110 ">
+                        Explorer</button>
                </div>
                 <div class="w-full h-full">
                     <img src="../public/assets/images/boques1.jpg" alt="lake escondido">
                 </div>
             </div>
         </div>
-        <div class="p-20" id="recomendandos">
-            <div class="w-48 h-64 shadow-lg rounded-lg">
-                <div class="w-full  h-3/5   bg-[url(/public/assets/images/cescondido.png)] bg-cover rounded-t-lg"></div>
-                <div class="w-full h-2/5 bg-secondary rounded-b-lg">
-                    <p class="text-Tertiary text-bold text-xl px-4 py-2">Charco Escondido</p>
-                    <p class="text-Tertiary text-sm px-4">Nature preserve</p>
+        <div class="p-6" id="recomendandos">
+            <p class="text-3xl font-semibold text-secondary">Our Recommendation</p>
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
+                <div class="card">
+                    <div class="w-full  h-3/5   bg-[url(/public/assets/images/cescondido.png)] bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                        <p class="text-Tertiary text-bold text-xl px-4 py-2">Charco Escondido</p>
+                        <p class="text-Tertiary text-sm px-4">Nature preserve</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full  h-3/5   bg-[url(/public/assets/images/cazul.png)] bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-primary rounded-b-lg">
+                        <p class="text-secondary text-bold text-xl px-4 py-2">Charco Azul</p>
+                        <p class="text-secondary text-sm px-4">hiking, caneing or rivering experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full  h-3/5   bg-[url(/public/assets/images/celduende.png)] bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-secondary rounded-b-lg">
+                        <p class="text-Tertiary text-bold text-xl px-4 py-2">Charco El duende</p>
+                        <p class="text-Tertiary text-sm px-4">delgenesis petroglyphs</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="w-full  h-3/5   bg-[url(/public/assets/images/humedalguarino.png)] bg-cover rounded-t-lg"></div>
+                    <div class="w-full h-2/5 bg-primary rounded-b-lg">
+                        <p class="text-secondary text-bold text-xl px-4 py-2">Humedal  Guarino</p>
+                        <p class="text-secondary text-sm px-4">biological ecosystem   </p>
+                    </div>
                 </div>
             </div>
         </div>
