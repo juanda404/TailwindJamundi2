@@ -5,9 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/tailwind.css">
     <title>Jamundí Travel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>Hello world</p>
-    <div class="w-64 h-64 bg-red-200"></div>
+    <nav></nav>
+    <div id="tab_bar"></div>
+    <section class="w-full h-screen">
+        <div id="home">
+            <div class="w-full h-3/4">         
+               <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
+                     <input class="p-3 bg-white rounded-full shadow-sm "  placeholder="Jamundí"  type="search" name="" id="">
+                      <button class=" w-36 rounded-full bg-white text-xl text-secondary shadow-sm font-semibold p-4">Explorer</button>
+               </div>
+                <div class="w-full h-full">
+                    <img src="../public/assets/images/boques1.jpg" alt="lake escondido">
+                </div>
+            </div>
+        </div>
+        <div id="recomendandos"></div>
+        <div id="rentas_destacadas"></div>
+    </section>
+    <footer></footer>
 </body>
 </html>
